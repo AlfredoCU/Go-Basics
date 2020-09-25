@@ -1,18 +1,23 @@
 package main
 
+// Importamos.
 import (
 	"fmt"
 	"math"
 )
 
-func main()  {
-	var radio float64
+// Función main
+func main() {
+	// variable
+	var r float64
 
 	fmt.Println("******* Calcular el área del círculo *******")
 
 	fmt.Print("- Ingrese el radio del círculo: ")
-	fmt.Scanf("%f", &radio)
+	// entradas
+	fmt.Scanf("%f", &r)
 
-	res := math.Pi * math.Pow(radio,2)
+	// cambios.
+	res := math.Pi * math.Pow(r, 2)
 	fmt.Println("- El resultado es: ", res)
 }
